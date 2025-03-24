@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      * {
+        font-family: "Open Sans",sans-serif;
+      }
+      .navbar{
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background-color: white;
+        border-bottom: 1px solid #eee;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+      }
+      .navbar-container{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 15px 60px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .logo{
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #FA0050;
+        text-decoration: none;
+        font-style: italic;
+      }
+      .navbar-right{
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+      .btn-outline{
+        padding: 8px 14px;
+        border: 1px solid #FA0050;
+        border-radius: 8px;
+        color: #FA0050;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+      .btn-outline:hover{
+        background-color: #f8d7af;
+      }
+      .btn-fill{
+        padding: 8px 14px;
+        border-radius: 8px;
+        background-color: #FA0050;
+        color: white;
+        font-weight: 600;
+        text-decoration: none;
+        transition: background 0.3s;
+      }
+      .btn-fill:hover{
+        border: 1px solid #FA0050;
+        border-radius: 8px;
+        background-color: white;
+        color: #FA0050;
+      }
+      .lang-selection{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        font-size: 0.95rem;
+        cursor: pointer;
+        color: #333;
+      }
+      .lang-selection .fa-chevron-down{
+        color: #FA0050;
+      }
+      .basket-icon{
+        font-size: 1.2rem;
+        color: #333;
+        cursor: pointer;
+      }
+      .basket-icon:hover{
+        color: #FA0050;
+      }
+      .sec-search-bar{
+        display: grid;
+        grid-template-columns: repeat(
+            12,
+            1fr
+        );
+        grid-template-rows: auto;
+        max-width: 1440px;
+        margin: 0;
+        padding: 0 10px;
+      }
+      .search-bar-content{
+        grid-column: 1 / 8;
+        margin: auto;
+      }
+      .search-bar-img{
+        grid-column: 8 / 12;
+      }
+      .search-bar-img img{
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+      .search-bar-content h1{
+        font-size: 2.5rem;
+        font-weight: 400;
+        color: #222;
+      }
+      .search-bar-content input{
+        grid-column: 1 / 11;
+        padding: 10px 15px;
+        position: relative;
+        border: 1px solid #f9f9f9;
+        border-radius: 4px;
+      }
+      .search-bar-search{
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        grid-template-rows: auto;
+      }
+      .search-bar-search a {
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        margin: auto;
+        color: #fff;
+        padding: 15px;
+        position: relative;
+        margin-left: 10px;
+        background-color: #FA0050;
+        border-radius: 8px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="navbar">
+      <div class="navbar-container">
+        <a href="" class="logo">Yemeksepeti</a>
+
+        <div class="navbar-right">
+          <a href="" class="btn-outline">Giriş Yap</a>
+          <a href="" class="btn-fill">Kayıt Ol</a>
+          <div class="lang-selection">
+            <i class="fa-solid fa-globe">
+              <span>TR</span>
+              <i class="fa-solid fa-chevron-down"></i>
+            </i>
+          </div>
+          <i class="fa-solid fa-basket-shopping basket-icon"></i>
+        </div>
+      </div>
+    </header>
+
+    <section class="sec-search-bar">
+        <div class="search-bar-content">
+            <h1>Yemek ya da market, tüm ihtiyaçların kapında!</h1>
+            <div class="search-bar-search">
+                <input type="search" placeholder="Adresini Belirle veya Seç">
+                <a href="">Keşfet</a>
+            </div>
+        </div>
+        <div class="search-bar-img">
+            <img src="../wwwroot/img/refresh-hero-home-tr.webp" alt="">
+        </div>
+    </section>
+    
+    <h1 class="bussiness-h1">Restoran veya Mahalle esnafı iş ortağımız olun</h1>
+    <section class="bussiness-img">
+        <div class="bussiness-img-div">
+            <div class="bussinness-content">
+                <h1>Hemen katılın, Yemeksepeti ile satışlarınızı katlamaya başlayın</h1>
+                <p>Binlerce yeni kullanıcıya ulaşabilmek ister misiniz? Sadece kendi semtinizdekiler değil, artık çevre semtlerdeki binlerce kullanıcı da işletmenizden sipariş verebilecek. Bir ev, bir plaza, bir işyeri ya da üniversite kampüsü, hizmet vermek istediğiniz kim varsa artık müşteriniz.
+                Gayet basit! Menünüzü listeliyoruz ve sipariş bilgilerini size ulaştırıyoruz. Sipariş teslimatını dilerseniz kendiniz yapabiliyorsunuz, dilerseniz Yemeksepeti sizin adınıza kullanıcıya ulaştırıyor.
+                Hemen ailemize katılabilir ve muhteşem avantajlara sahip iş ortaklarımızdan biri olabilirsiniz.</p>
+                <a href="">Başlayalım</a>
+            </div>
+        </div>
+    </section>
+  </body>
+</html>
