@@ -147,6 +147,370 @@
         background-color: #FA0050;
         border-radius: 8px;
       }
+      .bussiness-h1{
+        padding: 5px 10px;
+        font-size: 2rem;
+        font-weight: 400;
+        color: #222;
+        margin: 0 auto;
+        max-width: 1440px;
+        margin-top: 70px;
+      }
+      .bussiness-img{
+        width: 100%;
+        background-image: url(../wwwroot/img/home-vendor-tr.webp);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        margin-bottom: 400px;
+      }
+      .bussiness-img-div{
+        max-width: 1440px;
+        height: 400px;
+        margin: 20px auto;
+        padding: 0 100px;
+        position: relative;
+      }
+      .bussinness-content{
+        position: absolute;
+        bottom: -120px;
+        left: 20%;
+        transform: translateX(-50%);
+        background-color: #fff;
+        padding: 20px;
+        max-width: 580px;
+        border-radius: 15px;
+        box-shadow: 0px 0px 24px rgba(0, 0, 0, 0.25);
+      }
+      .bussinness-content h1{
+        font-size: 1.5rem;
+        font-weight: 500;
+        color: #222;
+      }
+      .bussinness-content a{
+        text-decoration: none;
+        text-align: center;
+        display: inline-block;
+        margin: auto;
+        color: #fff;
+        padding: 12px 15px;
+        position: relative;
+        margin-left: 0px;
+        margin-top: 10px;
+      }
+      .bussinness-content a::before{
+        content: "";
+        position: absolute;
+        background-color: #FA0050;
+        z-index: -1;
+        inset: 0;
+        border-radius: 8px;
+        vertical-align: baseline;
+        transition: inset 0.3s cubic-bezier(0.39, 2.04,1,0.49), background 0.3s ease-out;
+      }
+      .bussinness-content a:hover::before{
+        inset: -3;
+        background-color: #cd0045;
+        scale: 1.05;
+
+      }
+      .provinces{
+        margin: 0 auto;
+        max-width: 1440px;
+        padding: 30px 100px;
+        
+      }
+      .provinces > h1{
+      font-size: 2rem;
+      font-weight: 400;
+      color: #222;    
+      }
+      .provinces-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        margin-top: 30px;
+      }
+      .provinces-content-box{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+        height: 250px;
+        flex-basis: 300px;
+        margin:0 25px 25px 0;
+        border-radius: 15px;
+        cursor: pointer;
+        overflow: hidden;
+        position: relative;
+        z-index: 0;
+        text-decoration: none;
+      }
+      .provinces-content-box::before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(../wwwroot/img/city-tile-ankara.webp);
+        background-size: cover;
+        background-position: center;
+        transition: transform 0.3s cubic-bezier(0.42,0.7,0.43,0.71);
+        z-index: -1;
+      }
+      .provinces-content-box:hover::before{
+        transform: scale(1.08);
+      }
+      .provinces-content-box:nth-of-type(2)::before{
+        background-image: url(../wwwroot/img/city-tile-antalya.webp);
+      }
+      .provinces-content-box:nth-of-type(3)::before{
+        background-image: url(../wwwroot/img/city-tile-bursa.webp);
+      }
+      .provinces-content-box:nth-of-type(4)::before{
+        background-image: url(../wwwroot/img/city-tile-istanbul.webp);
+      }
+      .provinces-content-box:nth-of-type(5)::before{
+        background-image: url(../wwwroot/img/city-tile-izmir.webp);
+      }
+      .provinces-content-box h2{
+        color: #222;
+        font-weight: 400;
+        background-color: #fff;
+        padding: 10px;
+        font-size: 1.2rem;
+        margin: 8px;
+        border-radius: 8px;
+      }
+      .download-title{
+        max-width: 1200px;
+        margin: 60px auto 20px auto;
+        padding: 0 30px;
+        font-size: 2rem;
+        font-weight: 600;
+      }
+      .feature{
+        background-color: #FA0050;
+        border-radius: 16px;
+        color: #fff;
+        max-width: 1440px;
+        margin: 0 auto;
+        position: relative;
+        overflow: visible;
+        padding: 50px 0;
+      }
+      .feature-inner{
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 0 30px;
+        position: relative;
+      }
+      .left-content{
+        max-width: 600px;
+        z-index: 2;
+      }
+      .left-content h2{
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 20px;
+      }
+      .info-box{
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        margin-bottom: 20px;
+      }
+      .qr-img{
+        width: 80px;
+        height: 80px;
+        padding: 8px;
+        border: 1px solid #eee;
+        border-radius: 10px;
+      }
+      .app-buttons img{
+        height: 40px;
+        margin-right: 10px;
+        cursor: pointer;
+      }
+      .d-phone-img{
+        position: absolute;
+        right: -40px;
+        bottom: -80px;
+        width: 520px;
+        transform: rotate(4deg);
+        z-index: 1;
+        filter: drop-shadow(
+          0px 8px 15px rgba(0,0,0,0,0.25)
+        );
+      }
+      .desc{
+        display: flex;
+        flex-direction: column;
+        max-width: 1440px;
+        margin: 150px auto;
+        padding: 5px 120px;
+      }
+      .order{
+        max-width: 1440px;
+        margin: 0 auto;
+        padding: 5px 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+      .order div{
+        display: flex;
+        justify-content: space-between;
+      }
+
+      @media screen and (max-width: 768px){
+        *{
+          box-sizing: border-box;
+        }
+        html,body{
+          margin: 0;
+          padding: 0;
+          overflow-x: hidden;
+          width: 100%;
+          max-width: 100%;
+        }
+        .navbar{
+          position: sticky;
+          top: 0;
+          z-index: 1000;
+          background-color: white;
+        }
+        .navbar-container{
+          flex-direction: column;
+          padding: 10px 20px;
+          width: 100%;
+          box-sizing: border-box;
+        }
+        .navbar-right{
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+          margin-top: 10px;
+        }
+        .sec-search-bar{
+          grid-template-columns: 1fr;
+          padding: 0 20px;
+          text-align: center;
+          overflow-x: hidden;
+        }
+        .search-bar-content{
+          grid-column:  1 / -1;
+        }
+        .search-bar-img{
+          grid-column: 1 / -1;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+        }
+        .search-bar-img img{
+          width: 100%;
+          max-width: 100%;
+          height: auto;
+          display: block;
+          margin: 0 auto;
+        }
+        .search-bar-search{
+          grid-template-columns: 1fr;
+        }
+        .search-bar-search a{
+          margin-top: 15px;
+        }
+        .search-bar-content h1{
+          font-size: 16px;
+        }
+        .bussiness-img{
+          background-image: url(../wwwroot/img/home-vendor-tr.webp);
+          background-position: center;
+          background-size: cover;
+          background-repeat: no-repeat;
+          height: 400px;
+          position: relative;
+          margin-bottom: 0;
+        }
+        .bussiness-img-div{
+          padding: 0 20px;
+          height: 100%;
+          position: relative;
+        }
+        .bussinness-content{
+          position: absolute;
+          bottom: -90px;
+          left: 20px;
+          right: 20px;
+          transform: none;
+          margin: 0 auto;
+          max-width: unset;
+          width: calc(100% - 40px);
+        }
+        .bussinness-content h1{
+          font-size: 12px;
+          font-weight: bold;
+        }
+        .bussinness-content p{
+          font-size: 8px;
+        }
+        .bussiness-h1{
+          font-size: 16px;
+        }
+        .bussinness-content a{
+          display: block;
+          width: max-content;
+          padding: 10px 20px;
+          margin: 20px auto 0 auto;
+          background-color: #FA0050;
+          font-size: 0.9rem;
+          border-radius: 8px;
+        }
+        .provinces{
+          margin-top: 50px;
+          padding: 30px 20px;
+        }
+        .provinces-content-box{
+          flex-basis: 100%;
+          height: 200px;
+          margin: 0 0 20px 0;
+        }
+        .download-title{
+          padding: 0 20px;
+          font-size: 1.5rem;
+          text-align: center;
+        }
+        .feature{
+          flex-direction: column;
+          padding: 40px 20px;
+        }
+        .left-content{
+          max-width: 100%;
+        }
+        .feature-inner{
+          flex-direction: column;
+          padding: 0;
+        }
+        .d-phone-img{
+          position: static;
+          transform: none;
+          width: 100%;
+          max-width: 400px;
+          margin: 20px auto 0 auto;
+          display: block;
+        }
+        .order{
+          padding: 0 20px;
+        }
+        .order div{
+          flex-direction: column;
+          align-items: center;
+        }
+        .order ul{
+          margin-bottom: 20px;
+        }
+      }
     </style>
   </head>
   <body>
@@ -192,6 +556,114 @@
                 <a href="">Başlayalım</a>
             </div>
         </div>
+    </section>
+    <section class="provinces">
+      <h1>Türkiye'nin her şehrindeyiz!</h1>
+      <div class="provinces-content">
+        <a href="" class="provinces-content-box">
+          <h2>Ankara</h2>
+        </a>
+        <a href="" class="provinces-content-box">
+          <h2>Antalya</h2>
+        </a>
+        <a href="" class="provinces-content-box">
+          <h2>Bursa</h2>
+        </a>
+        <a href="" class="provinces-content-box">
+          <h2>İstanbul</h2>
+        </a>
+        <a href="" class="provinces-content-box">
+          <h2>İzmir</h2>
+        </a>
+      </div>
+    </section>
+    <h1 class="download-title">Mobil Uygulamamızı İndirin</h1>
+    <section class="feature">
+      <div class="feature-inner">
+        <div class="left-content">
+          <h2>Yemek ve Market İhtiyaçlarının tamamı için hemen indir!</h2>
+          <div class="info-box">
+            <img src="../wwwroot/img/trhomepageqrcode.png" alt="" class="qr-img">
+            <p>Yemek, hızlı market ya da çevredeki esnaflardan tüm ihtiyaçların dakikalar içinde kapında. Yemeksepeti’ni indir, sepetini oluşturup siparişini ver, online ya da kapıda dilediğin gibi öde.</p>
+          </div>
+          <div class="app-buttons">
+            <img src="../wwwroot/img/yemek_com_google 1.png" alt="">
+            <img src="../wwwroot/img/yemek_com_apple 1.png" alt="">
+          </div>
+        </div>
+        <img src="../wwwroot/img/home-yemeksepeti-apps.webp" alt="" class="d-phone-img">
+      </div>
+    </section>
+    <section class="desc">
+      <p>Türkiye'nin 81 şehri ve KKTC'de, 50 bini aşkın restoran iş ortağımızla, Türkiye’de online yemek siparişi denince ilk akla gelen markayız! Restoran zincirleri başta olmak üzere, civarınızdaki en sevdiğiniz restoranlardan kolayca sipariş verebilirsiniz.
+        <br><br>
+        Bunun yanında, hızlı market alışverişine ihtiyacınız varsa, Yemeksepeti Market hizmetinizde! Binlerce market ürünü dilediğiniz anda, dakikalar içinde gelsin!
+        <br><br>
+        Restoranınızı seçin, istediğiniz yemekleri sepete ekleyin, online ya da kapıda dilediğiniz gibi ödeyin. Gerisi kolay, siparişiniz hızlıca kapınızda!
+        <br><br>
+        Yemeksepeti Mahalle de burada! Çevrenizdeki bildiğiniz, güvendiğiniz işletme ve esnaflar; marketten kasaba, şarküteriden manava, balıkçıdan petshopa, tüm kampanyaları ve fırsatlarıyla siparişiniz için hazır.
+        
+        <h1>
+          Yemeksepeti’nde sizi neler bekliyor?
+        </h1>
+        ✓ Yemek siparişi ya da market alışverişinde onlarca mutfak ve kategori, binlerce çeşit ürün!<br>
+        ✓ Yemek ve market ihtiyaçlarınızda her gün on binlerce indirim!<br>
+        ✓ Online ya da kapıda, dilediğiniz gibi ödeme seçeneği! <br>
+        ✓ Siparişinizle ilgili size her zaman destek olmaya hazır, 7/24 Canlı Yardım ekibi!
+        Tek yapmanız gereken ihtiyacınızı düşünmek ve çevrenizdeki seçeneklere göz atmak!
+        <h1>
+          Yemeksepeti yanında, aklındaysa kapında!
+        </h1>
+      </p>
+    </section>
+    <section class="order">
+      <h1>Mutfaklar</h1>
+      <div>
+        <ul>
+          <h2>İstanbul</h2>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+        </ul>
+        <ul>
+          <h2>İstanbul</h2>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+        </ul>
+        <ul>
+          <h2>İstanbul</h2>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+        </ul>
+        <ul>
+          <h2>İstanbul</h2>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+          <li><a href="">Burger</a></li>
+        </ul>
+      </div>
     </section>
   </body>
 </html>
